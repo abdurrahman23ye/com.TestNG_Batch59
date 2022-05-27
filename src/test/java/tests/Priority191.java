@@ -1,7 +1,6 @@
-package priority;
+package tests;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.apache.hc.core5.reactor.Command;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -9,7 +8,6 @@ import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
 
 import java.time.Duration;
 
@@ -37,13 +35,13 @@ public class Priority191 {
 
     }
 
-  /*  @AfterClass
+    @AfterClass
     public void tearDown(){
 
         driver.quit();
     }
 
-   */
+
 
     @Test(priority=1)
     public void test1(){
